@@ -9,4 +9,6 @@ function draw(){
     player();
 
     playerMovement();
+
+    drawSprites();
 }
