@@ -1,14 +1,19 @@
 function setup() {
     createCanvas(1536,753);
-    background(50);
+    player();
+    level();
+    
 }
 
 
 function draw(){
 
-    player();
+    background(50);
 
     playerMovement();
-
+    
+    
     drawSprites();
+    
+    Collision();
 }
