@@ -1,9 +1,11 @@
 function setup() {
     createCanvas(1536,753);
     player();
-    level();
+    platforms();
+    border();
     
 }
+
 
 
 function draw(){
@@ -12,8 +14,13 @@ function draw(){
 
     playerMovement();
     
-    
     drawSprites();
     
-    Collision();
+    Gravity();
+
+    gun();
+
+    bullets();
+
 }
+
