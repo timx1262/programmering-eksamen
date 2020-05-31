@@ -7,7 +7,9 @@ let player2X = 1536*0.6666666666;
 let player2Y = 600;
 let jump = 20;
 let gravity = 1;
-
+let cooldown = 20;
+let health1 = 5;
+let health2 = 5;
 
 function player(){
 
@@ -175,17 +177,25 @@ function gun(){
 
 
  function keyPressed() {
-    if(keyCode == 87){
-            ply1.velocity.y -= jump;
-    
+
+
+    //this is the jump mechanic
+
+    if(keyCode == 87 && cooldown <= 0 ){
+        ply1.velocity.y -= jump;
+        cooldown = 40;
     }
 
-    if(keyCode == 38){
+    if(keyCode == 38 && cooldown <= 0){
         ply2.velocity.y -= jump;
-
+        cooldown = 40;
     }
     
 }
 
 
+function health(){
 
+
+
+}

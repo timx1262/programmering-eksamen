@@ -10,6 +10,8 @@ function setup() {
 
 function draw(){
 
+    cooldown = cooldown - 1;
+
     background(50);
 
     playerMovement();
