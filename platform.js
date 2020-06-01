@@ -9,11 +9,16 @@ let borderTop;
 let borderRight;
 let borderLeft;
 
+
+//the drawing of the borders
+
 function border(){
   borderTop = createSprite(width, height*0, 10000, 0.1);
   borderRight = createSprite(width, height*0, 0.1, 10000);
   borderLeft = createSprite(0, height*0, 0.1, 10000);
 }
+
+//the drawing of platforms
 
 function platforms() {
     
